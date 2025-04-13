@@ -41,13 +41,14 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="nav-link">Home</Link>
-          <a href="#features" className="nav-link">Features</a>
-          <Link to="/pricing" className="nav-link">Pricing</Link>
-          <Link to="/blog" className="nav-link">Blog</Link>
-          <Link to="/about" className="nav-link">About</Link>
-          <a href="#faq" className="nav-link">FAQ</a>
+          <Link to="/features" className="nav-link">Features</Link>
+          <Link to="/compare" className="nav-link">Compare</Link>
+          <Link to="/reach" className="nav-link">Reach</Link>
+          <Link to="/downloads" className="nav-link">Downloads</Link>
+          <Link to="/security" className="nav-link">Security</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
 
         {/* Right Side - Actions */}
@@ -76,11 +77,12 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-lg py-4 px-4 animate-fade-in">
           <nav className="flex flex-col gap-4">
             <Link to="/" onClick={() => setIsMenuOpen(false)} className="nav-link">Home</Link>
-            <a href="#features" onClick={() => setIsMenuOpen(false)} className="nav-link">Features</a>
-            <Link to="/pricing" onClick={() => setIsMenuOpen(false)} className="nav-link">Pricing</Link>
-            <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="nav-link">Blog</Link>
-            <Link to="/about" onClick={() => setIsMenuOpen(false)} className="nav-link">About</Link>
-            <a href="#faq" onClick={() => setIsMenuOpen(false)} className="nav-link">FAQ</a>
+            <Link to="/features" onClick={() => setIsMenuOpen(false)} className="nav-link">Features</Link>
+            <Link to="/compare" onClick={() => setIsMenuOpen(false)} className="nav-link">Compare</Link>
+            <Link to="/reach" onClick={() => setIsMenuOpen(false)} className="nav-link">Reach</Link>
+            <Link to="/downloads" onClick={() => setIsMenuOpen(false)} className="nav-link">Downloads</Link>
+            <Link to="/security" onClick={() => setIsMenuOpen(false)} className="nav-link">Security</Link>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="nav-link">Contact</Link>
             <a href="#beta-signup" onClick={() => setIsMenuOpen(false)} className="btn-primary text-center">Join Beta</a>
           </nav>
         </div>

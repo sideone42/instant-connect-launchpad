@@ -14,9 +14,16 @@ const Community = () => {
               Community
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              This page will be hosted on a separate Docker instance.
+              Our community platform is hosted on a separate Docker instance. We're working on integrating it seamlessly.
             </p>
-            <Link to="/" className="btn-primary">Return to Home Page</Link>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+              The community hub will allow you to connect with other InstantConnect users, share tips and tricks, 
+              suggest features, and participate in our product development process.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/" className="btn-primary">Return to Home Page</Link>
+              <a href="https://github.com/instantconnect" className="btn-outline">Visit GitHub</a>
+            </div>
           </div>
         </div>
       </main>

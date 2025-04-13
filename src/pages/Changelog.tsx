@@ -14,9 +14,16 @@ const Changelog = () => {
               Changelog
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              This page will be hosted on a separate Docker instance.
+              Our detailed changelog is hosted on a separate Docker instance. We're working on integrating it seamlessly.
             </p>
-            <Link to="/" className="btn-primary">Return to Home Page</Link>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+              The changelog documents all updates, improvements, and bug fixes to InstantConnect, 
+              providing complete transparency about our development process.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/" className="btn-primary">Return to Home Page</Link>
+              <a href="https://github.com/instantconnect/releases" className="btn-outline">View on GitHub</a>
+            </div>
           </div>
         </div>
       </main>

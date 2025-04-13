@@ -16,6 +16,12 @@ import Roadmap from "./pages/Roadmap";
 import Community from "./pages/Community";
 import ServerStatus from "./pages/ServerStatus";
 import Changelog from "./pages/Changelog";
+import Compare from "./pages/Compare";
+import Reach from "./pages/Reach";
+import Downloads from "./pages/Downloads";
+import Security from "./pages/Security";
+import Contact from "./pages/Contact";
+import Features from "./pages/Features";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +45,12 @@ const App = () => (
           <Route path="/community" element={<Community />} />
           <Route path="/server-status" element={<ServerStatus />} />
           <Route path="/changelog" element={<Changelog />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/reach" element={<Reach />} />
+          <Route path="/downloads" element={<Downloads />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/features" element={<Features />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
