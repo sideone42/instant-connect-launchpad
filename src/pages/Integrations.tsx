@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Separator } from "@/components/ui/separator";
@@ -10,7 +9,7 @@ import {
   Twitch, 
   Youtube, 
   Slack, 
-  Discord, 
+  MessageSquare, 
   Github, 
   MessageSquareMore, 
   Mail, 
@@ -87,7 +86,7 @@ const Integrations = () => {
     },
     {
       name: "Discord",
-      icon: <Discord />,
+      icon: <MessageSquare />,
       description: "Talk, chat, hang out, and stay close with friends",
       color: "text-indigo-500",
     },
