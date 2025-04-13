@@ -42,12 +42,12 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+          <Link to="/" className="nav-link">Home</Link>
           <a href="#features" className="nav-link">Features</a>
-          <a href="#roadmap" className="nav-link">Roadmap</a>
-          <a href="#team" className="nav-link">Team</a>
-          <a href="#testimonials" className="nav-link">Community</a>
+          <Link to="/pricing" className="nav-link">Pricing</Link>
+          <Link to="/blog" className="nav-link">Blog</Link>
+          <Link to="/about" className="nav-link">About</Link>
           <a href="#faq" className="nav-link">FAQ</a>
-          <a href="#contact" className="nav-link">Contact</a>
         </nav>
 
         {/* Right Side - Actions */}
@@ -75,12 +75,12 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-lg py-4 px-4 animate-fade-in">
           <nav className="flex flex-col gap-4">
+            <Link to="/" onClick={() => setIsMenuOpen(false)} className="nav-link">Home</Link>
             <a href="#features" onClick={() => setIsMenuOpen(false)} className="nav-link">Features</a>
-            <a href="#roadmap" onClick={() => setIsMenuOpen(false)} className="nav-link">Roadmap</a>
-            <a href="#team" onClick={() => setIsMenuOpen(false)} className="nav-link">Team</a>
-            <a href="#testimonials" onClick={() => setIsMenuOpen(false)} className="nav-link">Community</a>
+            <Link to="/pricing" onClick={() => setIsMenuOpen(false)} className="nav-link">Pricing</Link>
+            <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="nav-link">Blog</Link>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)} className="nav-link">About</Link>
             <a href="#faq" onClick={() => setIsMenuOpen(false)} className="nav-link">FAQ</a>
-            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="nav-link">Contact</a>
             <a href="#beta-signup" onClick={() => setIsMenuOpen(false)} className="btn-primary text-center">Join Beta</a>
           </nav>
         </div>

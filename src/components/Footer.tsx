@@ -47,9 +47,9 @@ const Footer = () => {
             <h2 className="text-lg font-semibold mb-4">Product</h2>
             <ul className="space-y-3 text-gray-400">
               <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#app-preview" className="hover:text-white transition-colors">Preview</a></li>
-              <li><a href="#roadmap" className="hover:text-white transition-colors">Roadmap</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
+              <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+              <li><Link to="/documentation" className="hover:text-white transition-colors">Documentation</Link></li>
+              <li><Link to="/roadmap" className="hover:text-white transition-colors">Roadmap</Link></li>
               <li><a href="#beta-signup" className="hover:text-white transition-colors">Beta Access</a></li>
             </ul>
           </div>
@@ -57,10 +57,8 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Company</h2>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#team" className="hover:text-white transition-colors">Team</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Press Kit</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link to="/community" className="hover:text-white transition-colors">Community</Link></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -68,10 +66,9 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Resources</h2>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#server-status" className="hover:text-white transition-colors">Status</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
+              <li><Link to="/server-status" className="hover:text-white transition-colors">Status</Link></li>
+              <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><Link to="/changelog" className="hover:text-white transition-colors">Changelog</Link></li>
               <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -83,9 +80,9 @@ const Footer = () => {
               &copy; {currentYear} InstantConnect. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link to="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>

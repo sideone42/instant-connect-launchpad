@@ -3,14 +3,9 @@ import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
-import AppPreview from "../components/AppPreview";
-import Roadmap from "../components/Roadmap";
-import Team from "../components/Team";
-import Testimonials from "../components/Testimonials";
-import ServerStatus from "../components/ServerStatus";
+import BetaSignupForm from "../components/BetaSignupForm";
 import FAQ from "../components/FAQ";
 import ContactForm from "../components/ContactForm";
-import BetaSignupForm from "../components/BetaSignupForm";
 import Footer from "../components/Footer";
 
 // SEO JSON-LD structured data for messaging app
@@ -63,14 +58,9 @@ const Index = () => {
       <main className="overflow-hidden">
         <Hero />
         <Features />
-        <AppPreview />
-        <Roadmap />
-        <Team />
-        <Testimonials />
-        <ServerStatus />
+        <BetaSignupForm />
         <FAQ />
         <ContactForm />
-        <BetaSignupForm />
       </main>
       <Footer />
     </>
