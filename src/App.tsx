@@ -22,6 +22,7 @@ import Downloads from "./pages/Downloads";
 import Security from "./pages/Security";
 import Contact from "./pages/Contact";
 import Features from "./pages/Features";
+import Integrations from "./pages/Integrations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/security" element={<Security />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/features" element={<Features />} />
+          <Route path="/integrations" element={<Integrations />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
