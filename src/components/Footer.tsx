@@ -46,8 +46,11 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Product</h2>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
+              <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+              <li><Link to="/compare" className="hover:text-white transition-colors">Compare</Link></li>
+              <li><Link to="/security" className="hover:text-white transition-colors">Security</Link></li>
+              <li><Link to="/webapp" className="hover:text-white transition-colors">WebApp</Link></li>
               <li><Link to="/documentation" className="hover:text-white transition-colors">Documentation</Link></li>
               <li><Link to="/roadmap" className="hover:text-white transition-colors">Roadmap</Link></li>
               <li><Link to="/integrations" className="hover:text-white transition-colors">Integrations</Link></li>
@@ -59,8 +62,9 @@ const Footer = () => {
             <h2 className="text-lg font-semibold mb-4">Company</h2>
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/feedback" className="hover:text-white transition-colors">Feedback</Link></li>
               <li><Link to="/community" className="hover:text-white transition-colors">Community</Link></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
           
@@ -70,6 +74,7 @@ const Footer = () => {
               <li><Link to="/server-status" className="hover:text-white transition-colors">Status</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
               <li><Link to="/changelog" className="hover:text-white transition-colors">Changelog</Link></li>
+              <li><Link to="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
               <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
